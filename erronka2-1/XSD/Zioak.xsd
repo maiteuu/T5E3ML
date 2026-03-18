@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Zioak">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="zioa" type="ZioaType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="ZioaType">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string"/>
+      <xs:element name="izena" type="xs:string"/>
+      <xs:element name="abizena" type="xs:string"/>
+      <xs:element name="telefonoa" type="xs:string"/>
+      <xs:element name="motibo" type="xs:string"/>
+      <xs:element name="data" type="xs:date"/>
+      <xs:element name="ordua" type="xs:time"/>
+      <xs:element name="irakurrita" type="xs:boolean" minOccurs="0" default="false"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

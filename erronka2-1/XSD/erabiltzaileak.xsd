@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="erabiltzaileak">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="erabiltzaile" type="ErabiltzaileType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="ErabiltzaileType">
+    <xs:sequence>
+      <xs:element name="id" type="xs:integer"/>
+      <xs:element name="izena" type="xs:string"/>
+      <xs:element name="pasahitza" type="xs:string"/>
+      <xs:element name="rola" type="RolaType"/>
+      <xs:element name="sorrera" type="xs:date"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="RolaType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="admin"/>
+      <xs:enumeration value="guest"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

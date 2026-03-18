@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fitxaketen XML fitxategiaren egitura balioztatzeko XSD-a -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="fitxaketak">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="fitxaketa" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="izena" type="xs:string"/>
+              <xs:element name="informazioa" type="xs:string"/>
+              <xs:element name="posizioa" type="xs:string"/>
+              <xs:element name="golak" type="xs:integer"/>
+              <xs:element name="prezioa" type="xs:string"/>
+              <xs:element name="jatorria" type="xs:string"/>
+              <xs:element name="jatorriaIrudia" type="xs:string"/>
+              <xs:element name="helburua" type="xs:string"/>
+              <xs:element name="helburuaIrudia" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

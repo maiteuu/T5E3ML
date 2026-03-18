@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Erabiltzaile zerrenda - Lista de usuarios -->
+<erabiltzaileak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/erabiltzaileak.xsd">
+  <erabiltzaile>
+    <id>1</id>
+    <izena>admin</izena>
+    <pasahitza>admin</pasahitza>
+    <rola>admin</rola>
+    <sorrera>2024-01-01</sorrera>
+  </erabiltzaile>
+  <erabiltzaile>
+    <id>2</id>
+    <izena>moderador</izena>
+    <pasahitza>moderador</pasahitza>
+    <rola>moderador</rola>
+    <sorrera>2024-01-01</sorrera>
+  </erabiltzaile>
+  <erabiltzaile>
+    <id>3</id>
+    <izena>guest</izena>
+    <pasahitza>guest</pasahitza>
+    <rola>guest</rola>
+    <sorrera>2024-01-01</sorrera>
+  </erabiltzaile>
+</erabiltzaileak>

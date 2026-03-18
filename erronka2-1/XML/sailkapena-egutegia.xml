@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sailkapena gordeak - Registros guardados de clasificaciones/temporadas -->
+<sailkapena-egutegia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/sailkapena-egutegia.xsd">
+  <egutegi>
+    <id>1</id>
+    <izena>Denboraldia 2023-2024</izena>
+    <data>2024-01-15</data>
+    <sailkapena>
+      <taldea>
+        <posizioa>1</posizioa>
+        <izena>Bizkaia</izena>
+        <partida>10</partida>
+        <irabaziak>8</irabaziak>
+        <galak>2</galak>
+        <puntuak>18</puntuak>
+      </taldea>
+      <taldea>
+        <posizioa>2</posizioa>
+        <izena>Gipuzkoa</izena>
+        <partida>10</partida>
+        <irabaziak>6</irabaziak>
+        <galak>4</galak>
+        <puntuak>14</puntuak>
+      </taldea>
+    </sailkapena>
+  </egutegi>
+</sailkapena-egutegia>

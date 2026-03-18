@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="sailkapena-egutegia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="egutegi" type="EgutegiType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="EgutegiType">
+    <xs:sequence>
+      <xs:element name="id" type="xs:integer"/>
+      <xs:element name="izena" type="xs:string"/>
+      <xs:element name="data" type="xs:date"/>
+      <xs:element name="sailkapena">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="taldea" type="TaldeaType" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TaldeaType">
+    <xs:sequence>
+      <xs:element name="posizioa" type="xs:integer"/>
+      <xs:element name="izena" type="xs:string"/>
+      <xs:element name="partida" type="xs:integer"/>
+      <xs:element name="irabaziak" type="xs:integer"/>
+      <xs:element name="galak" type="xs:integer"/>
+      <xs:element name="puntuak" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

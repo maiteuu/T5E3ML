@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sailkapenaren XML fitxategiaren egitura balioztatzeko XSD-a -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="sailkapena">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="errenkada" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="posizioa" type="xs:integer"/>
+              <xs:element name="taldea" type="xs:string"/>
+              <xs:element name="irudia" type="xs:string"/>
+              <xs:element name="jp" type="xs:integer"/>
+              <xs:element name="i" type="xs:integer"/>
+              <xs:element name="b" type="xs:integer"/>
+              <xs:element name="g" type="xs:integer"/>
+              <xs:element name="gd" type="xs:string"/>
+              <xs:element name="pnt" type="xs:integer"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
