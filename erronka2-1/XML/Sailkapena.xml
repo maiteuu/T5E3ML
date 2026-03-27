@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Euskal Eskubaloi Federazioa - Sailkapenaren XML Datu Basea
+  
+  Fitxategi honek ligako sailkapena gordetzen du.
+  Egitura:
+  - posizioa: Taldearen sailkapen posizioa
+  - taldea: Taldearen izena
+  - irudia: Taldearen logoa
+  - irab: Irabazitako partidak
+  - gald: Galduko partidak
+  - pf: Puntuak favor (markatutako golak)
+  - kp: Puntuak kontra (jasoako golak)
+  - pnt: Puntuazio totala
+  
+  Schema: ../XSD/Sailkapena.xsd
+-->
+<sailkapena xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/Sailkapena.xsd">
+  <errenkada>
+    <posizioa>1</posizioa>
+    <taldea>Irauli-Bosteko</taldea>
+    <irudia>Irudiak/Taldeak/Irauli-Bosteko.jpg</irudia>
+    <irab>7</irab>
+    <gald>3</gald>
+    <pf>84</pf>
+    <kp>36</kp>
+    <pnt>48</pnt>
+  </errenkada>
+  <errenkada>
+    <posizioa>2</posizioa>
+    <taldea>Ameztoi Zarautz ZKE</taldea>
+    <irudia>Irudiak/Taldeak/Ameztoi Zarautz zke.jpg</irudia>
+    <irab>6</irab>
+    <gald>4</gald>
+    <pf>72</pf>
+    <kp>48</kp>
+    <pnt>24</pnt>
+  </errenkada>
+  <errenkada>
+    <posizioa>3</posizioa>
+    <taldea>Kukullaga Etxebarri</taldea>
+    <irudia>Irudiak/Taldeak/EscudoKukuHD.jpg</irudia>
+    <irab>5</irab>
+    <gald>5</gald>
+    <pf>60</pf>
+    <kp>60</kp>
+    <pnt>0</pnt>
+  </errenkada>
+  <errenkada>
+    <posizioa>4</posizioa>
+    <taldea>San Adrian</taldea>
+    <irudia>Irudiak/Taldeak/San Adrian.jpg</irudia>
+    <irab>5</irab>
+    <gald>5</gald>
+    <pf>60</pf>
+    <kp>60</kp>
+    <pnt>0</pnt>
+  </errenkada>
+  <errenkada>
+    <posizioa>5</posizioa>
+    <taldea>Berango Urduliz Eskubaloia</taldea>
+    <irudia>Irudiak/Taldeak/Berango_Urduliz_Eskubaloia.jpg</irudia>
+    <irab>4</irab>
+    <gald>6</gald>
+    <pf>48</pf>
+    <kp>72</kp>
+    <pnt>-24</pnt>
+  </errenkada>
+  <errenkada>
+    <posizioa>6</posizioa>
+    <taldea>Construcciones Ugarte Aloña Mendi K.E</taldea>
+    <irudia>Irudiak/Taldeak/ALONA MENDI KIROL ELKARTEA.jpg</irudia>
+    <irab>3</irab>
+    <gald>7</gald>
+    <pf>36</pf>
+    <kp>84</kp>
+    <pnt>-48</pnt>
+  </errenkada>
+</sailkapena>

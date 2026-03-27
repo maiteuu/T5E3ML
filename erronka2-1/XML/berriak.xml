@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Euskal Eskubaloi Federazioa - Berrien XML Datu Basea
+  
+  Fitxategi honek EEF web guneko berri guztiak gordetzen ditu.
+  Egitura:
+  - id: Berriaren identifikatzaile bakarra
+  - titulua: Berriaren izenburua
+  - testua: Berriaren eduki osoa
+  - irudia: Berriarekin batera erakutsiko den irudia
+  - kategoria: Berriaren kategoria (Txapelketa, Formakuntza, etc.)
+  - data: Berriaren argitalpen data (YYYY-MM-DD formatuan)
+  
+  Schema: ../XSD/berriak.xsd
+-->
+<berriak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/berriak.xsd">
+  <berria>
+    <id>1</id>
+    <titulua>Euskadiko txapeldunak! Selekzioak garaipen historikoa lortu du</titulua>
+    <testua>Gure selekzioak txapelketa bikaina egin du aurten, partida guztiak irabaziz eta maila altua erakutsiz.</testua>
+    <irudia>Irudiak/Hasierako Berriak/euskadiko txapeldunak.jpg</irudia>
+    <kategoria>Txapelketa</kategoria>
+    <data>2024-01-10</data>
+  </berria>
+  <berria>
+    <id>2</id>
+    <titulua>Entrenatzaile ikastaro berria martxan</titulua>
+    <testua>Datorren hilabetean entrenatzaile titulua lortzeko formakuntza saioak hasiko dira Bilbon.</testua>
+    <irudia>Irudiak/Hasierako Berriak/curso entrenador.png</irudia>
+    <kategoria>Formakuntza</kategoria>
+    <data>2024-01-08</data>
+  </berria>
+  <berria>
+    <id>3</id>
+    <titulua>Partida zirraragarria asteburuan</titulua>
+    <testua>Ligako liderrak elkarren aurka jokatuko dute larunbat honetan arratsaldeko 18:00etan.</testua>
+    <irudia>Irudiak/Hasierako Berriak/PARTIDOjpg.jpg</irudia>
+    <kategoria>Txapelketa</kategoria>
+    <data>2024-01-05</data>
+  </berria>
+  <berria>
+    <id>4</id>
+    <titulua>Presidente berria Federazioan</titulua>
+    <testua>Hauteskundeak igaro ostean, zuzendaritza berriak kargua hartu du gaur goizean.</testua>
+    <irudia>Irudiak/Hasierako Berriak/presidente balonmano.jpg</irudia>
+    <kategoria>Instituzionala</kategoria>
+    <data>2024-01-02</data>
+  </berria>
+</berriak>

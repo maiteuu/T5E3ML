@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Euskal Eskubaloi Federazioa - Erabiltzaileen XML Datu Basea
+  
+  Fitxategi honek EEF web guneko erabiltzaileen kudeaketa datuak gordetzen ditu.
+  Egitura:
+  - id: Erabiltzailearen identifikatzaile bakarra (zenbakizkoa)
+  - izena: Erabiltzailearen izena (login erabiltzeko)
+  - pasahitza: Erabiltzailearen pasahitza (testu arrunta, hash gabe)
+  - rola: Erabiltzailearen rola (admin, moderador, guest)
+  - sorrera: Erabiltzailearen sortze data
+  
+  Rolak:
+  - admin: Administratzailea - baimen osoak ditu
+  - moderador: Moderatzailea - baimen ertainak ditu
+  - guest: Bisitaria - oinarrizko erabiltzailea
+  
+  Segurtasun oharrak:
+  - Pasahitzak testu arruntean gordetzen dira (produkzioan hash erabili behar da)
+  - Rolen arabera atzipen kontrolatzen da
+  - Saioen kudeaketa localStorage-en egiten da
+  
+  Schema: ../XSD/erabiltzaileak.xsd
+-->
+<erabiltzaileak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/erabiltzaileak.xsd">
+  <erabiltzaile>
+    <id>1</id>
+    <izena>admin</izena>
+    <pasahitza>admin</pasahitza>
+    <rola>admin</rola>
+    <sorrera>2024-01-01</sorrera>
+  </erabiltzaile>
+  <erabiltzaile>
+    <id>2</id>
+    <izena>moderador</izena>
+    <pasahitza>moderador</pasahitza>
+    <rola>moderador</rola>
+    <sorrera>2024-01-01</sorrera>
+  </erabiltzaile>
+  <erabiltzaile>
+    <id>3</id>
+    <izena>guest</izena>
+    <pasahitza>guest</pasahitza>
+    <rola>guest</rola>
+    <sorrera>2024-01-01</sorrera>
+  </erabiltzaile>
+</erabiltzaileak>

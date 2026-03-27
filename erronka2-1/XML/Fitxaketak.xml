@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Euskal Eskubaloi Federazioa - Fitxaketen XML Datu Basea
+  
+  Fitxategi honek EEF ligako jokalarien fitxaketen datuak gordetzen ditu.
+  Egitura (fitxaketa bakoitzerako):
+  - izena: Jokalariaren izen osoa
+  - informazioa: Jokalariaren deskribapen teknikoa
+  - posizioa: Jokatzen duen posizioa (zentrala, pibotea, etab.)
+  - golak: Denboraldian sartutako gol kopurua
+  - prezioa: Jokalariaren merkatuko balioa
+  - jatorria: Jokalariaren jatorrizko taldea
+  - jatorriaIrudia: Jatorrizko taldearen logoaren bidea
+  - helburua: Uneko taldea
+  - helburuaIrudia: Uneko taldearen logoaren bidea
+  
+  Erabilera:
+  - Fitxaketen merkatua bistaratzeko
+  - Jokalarien transferentziak kudeatzeko
+  - Estatistikak eta analisietarako datuak hornitzeko
+  - Kluben arteko mugimenduak jarraitzeko
+  
+  Fluxua:
+  1. Jokalari bat jatorrizko taldetik helburuko taldera mugitzen da
+  2. Fitxaketa datuak eguneratzen dir
+  3. Prezioa eta informazioa publikoki bistaratzen da
+  4. Historikoa mantentzen da mugimenduen jarraipenerako
+  
+  Schema: ../XSD/Fitxaketak.xsd
+-->
+<fitxaketak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/Fitxaketak.xsd">
+  <fitxaketa>
+    <izena>Aitor Atutxa</izena>
+    <informazioa>Eskubaloi jokalari trebea, erasoan oso arriskutsua.</informazioa>
+    <posizioa>Zentrala</posizioa>
+    <golak>120</golak>
+    <prezioa>45.000 €</prezioa>
+    <jatorria>Alona Mendi</jatorria>
+    <jatorriaIrudia>Irudiak/Taldeak/ALONA MENDI KIROL ELKARTEA.jpg</jatorriaIrudia>
+    <helburua>Zarautz ZKE</helburua>
+    <helburuaIrudia>Irudiak/Taldeak/Ameztoi Zarautz zke.jpg</helburuaIrudia>
+  </fitxaketa>
+  <fitxaketa>
+    <izena>Gorka Elorza</izena>
+    <informazioa>Defentsa sendoa eta jokoaren irakurketa bikaina.</informazioa>
+    <posizioa>Pibotea</posizioa>
+    <golak>45</golak>
+    <prezioa>32.000 €</prezioa>
+    <jatorria>Kukullaga</jatorria>
+    <jatorriaIrudia>Irudiak/Taldeak/Kukullaga Etxebarri.jpg</jatorriaIrudia>
+    <helburua>San Adrian</helburua>
+    <helburuaIrudia>Irudiak/Taldeak/San Adrian.jpg</helburuaIrudia>
+  </fitxaketa>
+  <fitxaketa>
+    <izena>Luken Basurto</izena>
+    <informazioa>Abiadura handiko jokalaria, kontraerasoan espezialista.</informazioa>
+    <posizioa>Hegalekoa</posizioa>
+    <golak>88</golak>
+    <prezioa>28.000 €</prezioa>
+    <jatorria>Urduliz</jatorria>
+    <jatorriaIrudia>Irudiak/Taldeak/Urduliz.jpg</jatorriaIrudia>
+    <helburua>Irauli-Bosteko</helburua>
+    <helburuaIrudia>Irudiak/Taldeak/Irauli-Bosteko.jpg</helburuaIrudia>
+  </fitxaketa>
+  <fitxaketa>
+    <izena>Aner Villalabeitia</izena>
+    <informazioa>Goleatzaile petoa, jaurtiketa indartsua duena.</informazioa>
+    <posizioa>Albokoa</posizioa>
+    <golak>150</golak>
+    <prezioa>55.000 €</prezioa>
+    <jatorria>Berango Urduliz</jatorria>
+    <jatorriaIrudia>Irudiak/Taldeak/Berango_Urduliz_Eskubaloia.jpg</jatorriaIrudia>
+    <helburua>Kukullaga</helburua>
+    <helburuaIrudia>Irudiak/Taldeak/Kukullaga Etxebarri.jpg</helburuaIrudia>
+  </fitxaketa>
+  <fitxaketa>
+    <izena>Iker Zubizarreta</izena>
+    <informazioa>Atezain segurua, esperientzia handikoa.</informazioa>
+    <posizioa>Atezaina</posizioa>
+    <golak>0</golak>
+    <prezioa>40.000 €</prezioa>
+    <jatorria>San Adrian</jatorria>
+    <jatorriaIrudia>Irudiak/Taldeak/San Adrian.jpg</jatorriaIrudia>
+    <helburua>Alona Mendi</helburua>
+    <helburuaIrudia>Irudiak/Taldeak/ALONA MENDI KIROL ELKARTEA.jpg</helburuaIrudia>
+  </fitxaketa>
+</fitxaketak>

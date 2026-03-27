@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Euskal Eskubaloi Federazioa - Sailkapenen Historiko XML Datu Basea
+  
+  Fitxategi honek denboraldietako sailkapenen historikoa gordetzen du.
+  Egitura (egutegi bakoitzerako):
+  - id: Egutegiaren identifikatzaile bakarra
+  - izena: Denboraldiaren izena (adib: 2023-2024)
+  - data: Egutegiaren sortze data
+  - sailkapena: Denboraldiko sailkapenaren taula
+  
+  Sailkapenaren egitura (taldea bakoitzerako):
+  - posizioa: Taldearen sailkapen posizioa
+  - izena: Taldearen izena
+  - partida: Jokatutako partidak
+  - irabaziak: Irabazitako partidak
+  - galak: Galduko partidak
+  - puntuak: Ligan lortutako puntuak
+  
+  Erabilera:
+  - Denboraldien historikoa gordetzeko
+  - Sailkapenen bilaketa egiteko
+  - Estatistika historikoak ikusteko
+  - Taldeen bilakaera aztertzeko
+  
+  Fluxua:
+  1. Denboraldi bakoitzean sailkapena gordetzen da
+  2. Admin-ek egutegi berriak sortu ditzakete
+  3. Erabiltzaileek aurreko denboraldiak ikusi ditzakete
+  4. Sailkapenak automatikoki kalkulatzen dir gurutzatzeetatik
+  
+  Schema: ../XSD/sailkapena-egutegia.xsd
+-->
+<sailkapena-egutegia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/sailkapena-egutegia.xsd">
+  <egutegi>
+    <id>1</id>
+    <izena>Denboraldia 2023-2024</izena>
+    <data>2024-01-15</data>
+    <sailkapena>
+      <taldea>
+        <posizioa>1</posizioa>
+        <izena>Bizkaia</izena>
+        <partida>10</partida>
+        <irabaziak>8</irabaziak>
+        <galak>2</galak>
+        <puntuak>18</puntuak>
+      </taldea>
+      <taldea>
+        <posizioa>2</posizioa>
+        <izena>Gipuzkoa</izena>
+        <partida>10</partida>
+        <irabaziak>6</irabaziak>
+        <galak>4</galak>
+        <puntuak>14</puntuak>
+      </taldea>
+    </sailkapena>
+  </egutegi>
+</sailkapena-egutegia>

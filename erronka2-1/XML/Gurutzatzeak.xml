@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Euskal Eskubaloi Federazioa - Gurutzatzeen XML Datu Basea
+  
+  Fitxategi honek taldeen arteko partiden emaitzak gordetzen ditu.
+  Egitura:
+  - enfrentamiento: Partida bakoitzaren elementu nagusia
+  - equipo1: Etxeko taldearen izena
+  - equipo2: Bisitari taldearen izena  
+  - goles1: Etxeko taldeak sartutako golak
+  - goles2: Bisitari taldeak sartutako golak
+  
+  Erabilera:
+  - Gurutzatzeen taula dinamikoa sortzeko
+  - Sailkapena automatikoki kalkulatzeko
+  - Taldeen arteko emaitzak ikusteko
+  - Estatistikak eta analisietarako datuak hornitzeko
+  
+  Logika:
+  - Talde bakoitza beste guztiekin jokatzen da
+  - Ez da talde bera bere aurka jokatzen (diagonala)
+  - Emaitzak partiden arabera gordetzen dira
+  
+  Schema: ../XSD/Cruces.xsd
+-->
+<cruces xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/Cruces.xsd">
+  <!-- Ameztoi Zarautz ZKE vs otros -->
+  <enfrentamiento>
+    <equipo1>Ameztoi Zarautz ZKE</equipo1>
+    <equipo2>Berango Urduliz Eskubaloia</equipo2>
+    <goles1>12</goles1>
+    <goles2>0</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Ameztoi Zarautz ZKE</equipo1>
+    <equipo2>Construcciones Ugarte Aloña Mendi K.E</equipo2>
+    <goles1>12</goles1>
+    <goles2>0</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Ameztoi Zarautz ZKE</equipo1>
+    <equipo2>Irauli-Bosteko</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Ameztoi Zarautz ZKE</equipo1>
+    <equipo2>Kukullaga Etxebarri</equipo2>
+    <goles1>12</goles1>
+    <goles2>0</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Ameztoi Zarautz ZKE</equipo1>
+    <equipo2>San Adrian</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  
+  <!-- Berango Urduliz Eskubaloia vs otros -->
+  <enfrentamiento>
+    <equipo1>Berango Urduliz Eskubaloia</equipo1>
+    <equipo2>Ameztoi Zarautz ZKE</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Berango Urduliz Eskubaloia</equipo1>
+    <equipo2>Construcciones Ugarte Aloña Mendi K.E</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Berango Urduliz Eskubaloia</equipo1>
+    <equipo2>Irauli-Bosteko</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Berango Urduliz Eskubaloia</equipo1>
+    <equipo2>Kukullaga Etxebarri</equipo2>
+    <goles1>12</goles1>
+    <goles2>0</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Berango Urduliz Eskubaloia</equipo1>
+    <equipo2>San Adrian</equipo2>
+    <goles1>12</goles1>
+    <goles2>0</goles2>
+  </enfrentamiento>
+  
+  <!-- Construcciones Ugarte Aloña Mendi K.E vs otros -->
+  <enfrentamiento>
+    <equipo1>Construcciones Ugarte Aloña Mendi K.E</equipo1>
+    <equipo2>Ameztoi Zarautz ZKE</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Construcciones Ugarte Aloña Mendi K.E</equipo1>
+    <equipo2>Berango Urduliz Eskubaloia</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Construcciones Ugarte Aloña Mendi K.E</equipo1>
+    <equipo2>Irauli-Bosteko</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Construcciones Ugarte Aloña Mendi K.E</equipo1>
+    <equipo2>Kukullaga Etxebarri</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Construcciones Ugarte Aloña Mendi K.E</equipo1>
+    <equipo2>San Adrian</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  
+  <!-- Irauli-Bosteko vs otros -->
+  <enfrentamiento>
+    <equipo1>Irauli-Bosteko</equipo1>
+    <equipo2>Ameztoi Zarautz ZKE</equipo2>
+    <goles1>12</goles1>
+    <goles2>0</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Irauli-Bosteko</equipo1>
+    <equipo2>Berango Urduliz Eskubaloia</equipo2>
+    <goles1>12</goles1>
+    <goles2>0</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Irauli-Bosteko</equipo1>
+    <equipo2>Construcciones Ugarte Aloña Mendi K.E</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Irauli-Bosteko</equipo1>
+    <equipo2>Kukullaga Etxebarri</equipo2>
+    <goles1>12</goles1>
+    <goles2>0</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Irauli-Bosteko</equipo1>
+    <equipo2>San Adrian</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  
+  <!-- Kukullaga Etxebarri vs otros -->
+  <enfrentamiento>
+    <equipo1>Kukullaga Etxebarri</equipo1>
+    <equipo2>Ameztoi Zarautz ZKE</equipo2>
+    <goles1>12</goles1>
+    <goles2>0</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Kukullaga Etxebarri</equipo1>
+    <equipo2>Berango Urduliz Eskubaloia</equipo2>
+    <goles1>12</goles1>
+    <goles2>0</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Kukullaga Etxebarri</equipo1>
+    <equipo2>Construcciones Ugarte Aloña Mendi K.E</equipo2>
+    <goles1>12</goles1>
+    <goles2>0</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Kukullaga Etxebarri</equipo1>
+    <equipo2>Irauli-Bosteko</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>Kukullaga Etxebarri</equipo1>
+    <equipo2>San Adrian</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  
+  <!-- San Adrian vs otros -->
+  <enfrentamiento>
+    <equipo1>San Adrian</equipo1>
+    <equipo2>Ameztoi Zarautz ZKE</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>San Adrian</equipo1>
+    <equipo2>Berango Urduliz Eskubaloia</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>San Adrian</equipo1>
+    <equipo2>Construcciones Ugarte Aloña Mendi K.E</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>San Adrian</equipo1>
+    <equipo2>Irauli-Bosteko</equipo2>
+    <goles1>12</goles1>
+    <goles2>0</goles2>
+  </enfrentamiento>
+  <enfrentamiento>
+    <equipo1>San Adrian</equipo1>
+    <equipo2>Kukullaga Etxebarri</equipo2>
+    <goles1>0</goles1>
+    <goles2>12</goles2>
+  </enfrentamiento>
+</cruces>

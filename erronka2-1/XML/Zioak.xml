@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Euskal Eskubaloi Federazioa - Zioen XML Datu Basea
+  
+  Fitxategi honek erabiltzaileen zioak eta iradokizpenak gordetzen ditu.
+  Egitura (zio bakoitzerako):
+  - id: Zioaren identifikatzaile bakarra (timestamp erabiliz)
+  - izena: Zioa bidali duenaren izena
+  - abizena: Zioa bidali duenaren abizena
+  - telefonoa: Kontaktu-zenbakia
+  - motibo: Zioaren deskribapen luzea (500 karaktere maximo)
+  - data: Zioaren bidaltze data (YYYY-MM-DD)
+  - ordua: Zioaren bidaltze ordua (HH:MM:SS)
+  - irakurrita: Zioa irakurrita den ala ez (booleano)
+  
+  Fluxua:
+  1. Erabiltzaileak zioa bidaltzen du (guest rola)
+  2. Zioa XML fitxategian gordetzen da
+  3. Admin-ek zioak ikusi ditzakete (admin/moderador rola)
+  4. Irakurritako marka ezartzen da
+  5. Zioa ezabatu daiteke behin irakurrita
+  
+  Erabilera:
+  - Berrikuntzak eta iradokizpenak jasotzeko
+  - Arazoak eta erroreak jakinarazteko
+  - Komunikazioa hobetzeko federazioa eta erabiltzaileen artean
+  
+  Schema: ../XSD/Zioak.xsd
+-->
+<Zioak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/Zioak.xsd">
+  <!-- Zioak automatikoki hemen gordeko dira -->
+</Zioak>

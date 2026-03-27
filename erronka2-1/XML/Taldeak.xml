@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Euskal Eskubaloi Federazioa - Taldeen XML Datu Basea
+  
+  Fitxategi honek EEF ligako talde guztien datuak gordetzen ditu.
+  Egitura:
+  - id: Taldearen identifikatzaile bakarra (zenbakizkoa)
+  - izena: Taldearen izen ofiziala
+  - irudia: Taldearen logoaren bidea (relative path)
+  - deskribapena: Taldearen deskribapen luzea eta historikoa
+  - info_url: Taldearen webgune ofizialaren URL-a
+  
+  Erabilera:
+  - Web gunean taldeen zerrenda bistaratzeko
+  - Partidetako emaitzak kalkulatzeko
+  - Gurutzatzeen taulan erabiltzeko
+  - Sailkapena automatikoki kalkulatzeko
+  
+  Schema: ../XSD/Taldeak.xsd
+-->
+<taldeak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/Taldeak.xsd">
+  <taldea>
+    <id>1</id>
+    <izena>Ameztoi Zarautz ZKE</izena>
+    <irudia>Irudiak/Taldeak/Ameztoi Zarautz zke.jpg</irudia>
+    <deskribapena>Zarauzko eskubaloi taldea, tradizio handikoa eta harrobiarekin lan bikaina egiten duena. Euskadiko ligan lehiatzen da maila gorenean.</deskribapena>
+    <info_url>https://zke-eskubaloia.com/2025/11/26/argazkiak-ameztoi-zarautz-zke-malape-taberna-elgoibar-2025-11-22/</info_url>
+  </taldea>
+  <taldea>
+    <id>2</id>
+    <izena>Berango Urduliz Eskubaloia</izena>
+    <irudia>Irudiak/Taldeak/Berango_Urduliz_Eskubaloia.jpg</irudia>
+    <deskribapena>Urdulizko taldea, azken urteetan hazkunde nabarmena izan duena. Gazte mailan emaitza bikainak lortzen ari dira.</deskribapena>
+    <info_url>https://www.urduliz.com/</info_url>
+  </taldea>
+  <taldea>
+    <id>3</id>
+    <izena>Construcciones Ugarte Aloña Mendi K.E</izena>
+    <irudia>Irudiak/Taldeak/ALONA MENDI KIROL ELKARTEA.jpg</irudia>
+    <deskribapena>Oñatiko taldea, Gipuzkoako eskubaloian erreferente bat. Talde lehiakorra eta zaleen babes handia duena.</deskribapena>
+    <info_url>http://xn--aloamendi-n6a.eus/espeleologia/publikazioa/bibliografia/</info_url>
+  </taldea>
+  <taldea>
+    <id>4</id>
+    <izena>Irauli-Bosteko</izena>
+    <irudia>Irudiak/Taldeak/Irauli-Bosteko.jpg</irudia>
+    <deskribapena>Donostiako taldea, joko dinamikoa eta azkarra ezaugarri duena. Denboraldi honetan goiko postuetan sartzeko borrokan.</deskribapena>
+    <info_url>https://iraulifk.wordpress.com/</info_url>
+  </taldea>
+  <taldea>
+    <id>5</id>
+    <izena>Kukullaga Etxebarri</izena>
+    <irudia>Irudiak/Taldeak/EscudoKukuHD.jpg</irudia>
+    <deskribapena>Etxebarriko talde historikoa, emakumezkoen eskubaloian ibilbide luzea duena. Harrobi Larria eta etorkizun oparoa.</deskribapena>
+    <info_url>https://cb-kukullaga.wixsite.com/cb-kukullaga</info_url>
+  </taldea>
+  <taldea>
+    <id>6</id>
+    <izena>San Adrian</izena>
+    <irudia>Irudiak/Taldeak/San Adrian.jpg</irudia>
+    <deskribapena>Bilboko taldea, San Adrian auzokoa. Auzolana eta konpromisoa dira talde honen balio nagusiak.</deskribapena>
+    <info_url>https://sanadrianeskubaloia.wordpress.com/</info_url>
+  </taldea>
+</taldeak>

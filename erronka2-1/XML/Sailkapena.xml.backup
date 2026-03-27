@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ligako sailkapenaren datuak -->
+<sailkapena xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/Sailkapena.xsd">
+  <errenkada>
+    <posizioa>1</posizioa>
+    <taldea>Ameztoi Zarautz ZKE</taldea>
+    <irudia>Irudiak/Taldeak/Ameztoi Zarautz zke.jpg</irudia>
+    <irab>24</irab>
+    <gald>3</gald>
+    <pf>850</pf>
+    <kp>720</kp>
+    <pnt>130</pnt>
+  </errenkada>
+  <errenkada>
+    <posizioa>2</posizioa>
+    <taldea>Berango Urduliz Eskubaloia</taldea>
+    <irudia>Irudiak/Taldeak/Berango_Urduliz_Eskubaloia.jpg</irudia>
+    <irab>21</irab>
+    <gald>5</gald>
+    <pf>820</pf>
+    <kp>745</kp>
+    <pnt>75</pnt>
+  </errenkada>
+  <errenkada>
+    <posizioa>3</posizioa>
+    <taldea>Construcciones Ugarte Aloña Mendi K.E</taldea>
+    <irudia>Irudiak/Taldeak/ALONA MENDI KIROL ELKARTEA.jpg</irudia>
+    <irab>19</irab>
+    <gald>7</gald>
+    <pf>800</pf>
+    <kp>780</kp>
+    <pnt>20</pnt>
+  </errenkada>
+  <errenkada>
+    <posizioa>4</posizioa>
+    <taldea>Irauli-Bosteko</taldea>
+    <irudia>Irudiak/Taldeak/Irauli-Bosteko.jpg</irudia>
+    <irab>16</irab>
+    <gald>10</gald>
+    <pf>785</pf>
+    <kp>810</kp>
+    <pnt>-25</pnt>
+  </errenkada>
+  <errenkada>
+    <posizioa>5</posizioa>
+    <taldea>Kukullaga Etxebarri</taldea>
+    <irudia>Irudiak/Taldeak/EscudoKukuHD.jpg</irudia>
+    <irab>12</irab>
+    <gald>14</gald>
+    <pf>760</pf>
+    <kp>845</kp>
+    <pnt>-85</pnt>
+  </errenkada>
+  <errenkada>
+    <posizioa>6</posizioa>
+    <taldea>San Adrian</taldea>
+    <irudia>Irudiak/Taldeak/San Adrian.jpg</irudia>
+    <irab>8</irab>
+    <gald>18</gald>
+    <pf>720</pf>
+    <kp>920</kp>
+    <pnt>-200</pnt>
+  </errenkada>
+</sailkapena>
