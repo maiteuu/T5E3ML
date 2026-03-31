@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<txapelketa>
+    <taldea id="1">
+        <izena>Athletic Club</izena>
+        <irabazita>15</irabazita>
+        <berdinduta>5</berdinduta>
+        <argazkia>img/athletic.jpg</argazkia> </taldea>
+    <taldea id="2">
+        <izena>Real Sociedad</izena>
+        <irabazita>12</irabazita>
+        <berdinduta>8</berdinduta>
+        <argazkia>img/reala.jpg</argazkia> </taldea>
+</txapelketa>
