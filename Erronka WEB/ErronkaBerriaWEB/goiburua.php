@@ -1,6 +1,8 @@
 <?php
 // Saioa hasi fitxategi guztietan
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 <!DOCTYPE html>
 <html lang="eu">

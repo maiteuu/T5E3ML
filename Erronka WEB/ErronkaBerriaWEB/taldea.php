@@ -18,9 +18,20 @@ include 'db.php';
             $taldea_info = $emaitza_taldea->fetch_assoc();
             
             echo "<h2>" . htmlspecialchars($taldea_info["Izena"]) . " - Profila</h2>";
-            
-            // Hemen argazkia kargatzen dugu (Gorde argazki bat img karpetan default.jpg izenarekin)
-            echo "<img src='img/default.jpg' alt='Taldearen argazkia' style='max-width:300px; border-radius: 8px;'>";
+
+            // 1. Irudiaren ibilbidea dinamikoki sortu taldearen izenarekin
+            $irudi_izena = $taldea_info["Izena"] . ".jpg";
+            $irudi_ruta = "Irudiak/Taldeak/" . $irudi_izena;
+
+            // 2. Egiaztatu argazkia zerbitzarian existitzen den
+            if (file_exists($irudi_ruta)) {
+                $argazkia = $irudi_ruta; // Berezko argazkia badu
+            } else {
+                $argazkia = "img/default.jpg"; // Ez badu, argazki lehenetsia
+            }
+
+        // 3. Argazkia pantailaratu
+        echo "<img src='" . htmlspecialchars($argazkia) . "' alt='Escudo de " . htmlspecialchars($taldea_info["Izena"]) . "' style='max-width:300px; border-radius: 8px;'>";
             
             echo "<ul>";
             echo "<li><strong>Kodea:</strong> " . $taldea_info["kod_taldea"] . "</li>";
