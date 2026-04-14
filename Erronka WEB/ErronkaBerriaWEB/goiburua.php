@@ -14,7 +14,7 @@ if (session_status() === PHP_SESSION_NONE) {
 </head>
 <body>
     <header>
-        <h1>Futbol Txapelketa</h1>
+        <h1>Eskubaloi Txapelketa</h1>
         <div class="erabiltzaile-info">
             <?php
             // Logeatuta badago, bere izena eta rola erakutsi
@@ -30,8 +30,13 @@ if (session_status() === PHP_SESSION_NONE) {
         <nav>
             <ul>
                 <li><a href="index.php">Hasiera (Sailkapena)</a></li>
+                <li><a href="berriak.php">Berriak</a></li>
                 <?php
                 // ROL DESBERDINEN FUNTZIONALTASUNA: Admin-ak bakarrik ikusten du "Kudeatu"
+                if (isset($_SESSION['rola'])) {
+                    echo '<li><a href="kontaktua.php"> Kontaktua </a></li>';
+                }
+                
                 if (isset($_SESSION['rola']) && $_SESSION['rola'] == 'admin') {
                     echo '<li><a href="kudeatu.php">⚙️ Datuak Kudeatu (Admin)</a></li>';
                 }

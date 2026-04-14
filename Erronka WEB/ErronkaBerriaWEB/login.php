@@ -50,14 +50,14 @@ include 'goiburua.php';
 <main>
     <h2>Sistemara Sartu</h2>
     
-    <div style="background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+    <!--<div style="background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
         <h4 style="margin-top: 0; color: #2c3e50;">🧪 Probetarako Erabiltzaileak:</h4>
         <ul style="margin-bottom: 0;">
             <li><strong>Erabiltzailea:</strong> admin | <strong>Pasahitza:</strong> 1234 <em>(Kudeatzeko baimenarekin)</em></li>
             <li><strong>Erabiltzailea:</strong> ikasle | <strong>Pasahitza:</strong> daw1 <em>(Baimen barik)</em></li>
             <li><strong>Erabiltzailea:</strong> epaile | <strong>Pasahitza:</strong> partida <em>(Baimen barik)</em></li>
         </ul>
-    </div>
+    </div>-->
 
     <?php
     // Errorea badago, CSS klasea erabiliz erakutsi
