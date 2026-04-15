@@ -7,11 +7,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $testua = htmlspecialchars($_POST['testua']);
 
-    // Definimos la ruta de la carpeta y del archivo
     $directorio = 'xml/xml_msg/';
     $archivoXML = $directorio . 'mensajes_contacto.xml';
 
-    // Verificamos si la carpeta existe, si no, la creamos
     if (!is_dir($directorio)) {
         mkdir($directorio, 0777, true); 
     }
@@ -36,7 +34,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nuevoMensaje->appendChild($xml->createElement('Data', date('Y-m-d H:i:s')));
     $root->appendChild($nuevoMensaje);
 
-    // Guardar el archivo en la ruta xml/xml_msg/
     if ($xml->save($archivoXML)) {
         $mezua = "<p class='mensaje-exito'>Mezua bidali egin da. :)</p>";
     } else {

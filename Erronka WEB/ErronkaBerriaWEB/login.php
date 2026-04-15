@@ -31,7 +31,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo "Pasahitza: [" . $pas . "]<br>";
     echo "</div>";
 
-    // Hemen == jarri dut === ordez, badaezpada PHP-k zenbaki bezala hartzen badu
     if (isset($erabiltzaileak_probak[$erab]) && $erabiltzaileak_probak[$erab]['pasahitza'] == $pas) {
         
         $_SESSION['erabiltzailea'] = $erab;
