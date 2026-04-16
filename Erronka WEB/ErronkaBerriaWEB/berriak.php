@@ -56,11 +56,11 @@
 
         <div class="carousel" id="carousel4">
             <div class="carousel-inner" id="inner4">
-                <div class="carousel-item"><img src="Irudiak/berriak/jokaldi1.jpg" alt="Jugada 1"></div>
-                <div class="carousel-item"><img src="Irudiak/berriak/jokaldi2.jpg" alt="Jugada 2"></div>
+                <div class="carousel-item"><img src="Irudiak/Taldeak/San Adrian.jpg" alt="Jugada 1"></div>
+                <div class="carousel-item"><img src="Irudiak/Taldeak/Kukullaga Etxebarri.jpg" alt="Jugada 2"></div>
                 <div class="carousel-item">
                     <video style="width: 100%; height: 100%; object-fit: contain; background: #000;" controls>
-                        <source src="Bideoak/partida_laburpena.mp4" type="video/mp4">
+                        <source src="Irudiak/videoa_3V6Dpz1g.mp4" type="video/mp4">
                         Zure nabigatzaileak ez du bideoa onartzen.
                     </video>
                 </div>
@@ -79,7 +79,6 @@
     const carouselIndices = {};
 
     function moveSlide(step, innerId) {
-        // Si es la primera vez que se usa este carrusel, inicializamos su índice en 0
         if (!(innerId in carouselIndices)) {
             carouselIndices[innerId] = 0;
         }
@@ -87,10 +86,8 @@
         const inner = document.getElementById(innerId);
         const totalItems = inner.children.length;
 
-        // Calculamos el nuevo índice (con soporte para ciclo infinito)
         carouselIndices[innerId] = (carouselIndices[innerId] + step + totalItems) % totalItems;
 
-        // Aplicamos el desplazamiento lateral
         inner.style.transform = `translateX(-${carouselIndices[innerId] * 100}%)`;
     }
 </script>
