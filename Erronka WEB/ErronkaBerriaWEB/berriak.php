@@ -60,7 +60,7 @@
                 <div class="carousel-item"><img src="Irudiak/Taldeak/Kukullaga Etxebarri.jpg" alt="Jugada 2"></div>
                 <div class="carousel-item">
                     <video style="width: 100%; height: 100%; object-fit: contain; background: #000;" controls>
-                        <source src="Irudiak/videoa_3V6Dpz1g.mp4" type="video/mp4">
+                        <source src="Irudiak/Videoa/videoa_3V6Dpz1g.mp4" type="video/mp4">
                         Zure nabigatzaileak ez du bideoa onartzen.
                     </video>
                 </div>
