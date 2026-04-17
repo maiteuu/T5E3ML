@@ -55,6 +55,9 @@ include 'db.php';
         <button type="submit" class="btn-primary">Eguneratu DB-a</button>
     </form>
 </main>
-<?php $konexioa->close(); ?>
+<?php 
+$konexioa->close(); // Konexioa itxi
+include 'footer.php';
+?>
 </body>
 </html>

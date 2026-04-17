@@ -35,30 +35,30 @@ $taula_izena = $taulak[$denboraldia];
         $sql = "SELECT taldea, JP, IrP, BerP, GaP, puntuak FROM $taula_izena ORDER BY puntuak DESC";
         $emaitza = $konexioa->query($sql);
         
-        // Emaitzak badaude, taula bat sortu
         if ($emaitza && $emaitza->num_rows > 0) {
             echo "<table>";
             echo "<tr><th>Taldea</th><th>Jokatutakoak (JP)</th><th>Irabazita (IrP)</th><th>Puntuak</th><th>Xehetasunak</th></tr>";
             
-            // While begizta bat lerro guztiak irakurtzeko
             while($lerroa = $emaitza->fetch_assoc()) {
                 echo "<tr>";
                 echo "<td>" . $lerroa["taldea"] . "</td>";
                 echo "<td>" . $lerroa["JP"] . "</td>";
                 echo "<td>" . $lerroa["IrP"] . "</td>";
                 echo "<td><strong>" . $lerroa["puntuak"] . "</strong></td>";
-                // URL-tik taldearen izena pasatzen dugu xehetasunak ikusteko
                 echo "<td><a href='taldea.php?izena=" . urlencode($lerroa["taldea"]) . "'>Ikusi profila</a></td>";
                 echo "</tr>";
             }
             echo "</table>";
         } else {
-
             echo "<p style='text-align: center; color: #e74c3c;'><strong>Ez dago daturik sailkapen taulan denboraldi honetarako.</strong></p>";
         }
         ?>
     </div>
 </main>
-<?php $konexioa->close(); // Konexioa itxi beti bukaeran ?>
+
+<?php 
+$konexioa->close(); // Konexioa itxi
+include 'footer.php';
+?>
 </body>
 </html>

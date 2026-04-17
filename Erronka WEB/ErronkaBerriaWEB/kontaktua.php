@@ -35,33 +35,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $root->appendChild($nuevoMensaje);
 
     if ($xml->save($archivoXML)) {
-        $mezua = "<p class='mensaje-exito'>Mezua bidali egin da. :)</p>";
+        $mezua = "<div class='mensaje-exito'>Mezua ondo bidali da. Laster jarriko gara zurekin harremanetan! :)</div>";
     } else {
-        $mezua = "<p class='mensaje-error'>Errorea XML fitxategia idazterakoan. Ziurtatu direktorioak baimenak dituela.</p>";
+        $mezua = "<div class='mensaje-error'>Errorea XML fitxategia idazterakoan. Ziurtatu direktorioak baimenak dituela.</div>";
     }
 }
 ?>
 
-<section class="contacto-section">
-    <h2>Kontaktua</h2>
-    <?php echo $mezua; ?>
+<link rel="stylesheet" href="css/CSS.css">
 
-    <form method="POST" action="kontaktua.php" class="contacto-form">
-        <div class="form-group">
-            <label for="izena">Izena:</label>
-            <input type="text" id="izena" name="izena" class="form-input" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" class="form-input" required>
-        </div>
-        <div class="form-group">
-            <label for="testua">Mezua:</label>
-            <textarea id="testua" name="testua" rows="5" class="form-input" required></textarea>
-        </div>
-        <button type="submit" class="btn-enviar">Mezua Bidali</button>
-    </form>
-</section>
+<main>
+    <section class="contacto-section">
+        <h2>Kontaktua</h2>
+        
+        <?php echo $mezua; ?>
+
+        <form method="POST" action="kontaktua.php" class="contacto-form">
+            <div class="form-group">
+                <label for="izena">Izena:</label>
+                <input type="text" id="izena" name="izena" class="form-input" placeholder="Zure izena" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="adibidea@email.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="testua">Mezua:</label>
+                <textarea id="testua" name="testua" class="form-textarea" placeholder="Idatzi zure mezua hemen..." required></textarea>
+            </div>
+            
+            <button type="submit" class="form-btn">Bidali Mezua</button>
+        </form>
+    </section>
+</main>
+
+<?php 
+include 'footer.php';
+?>
 
 </body>
-</html>
+</html> 

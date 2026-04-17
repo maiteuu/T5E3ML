@@ -12,12 +12,12 @@ if (session_status() === PHP_SESSION_NONE) {
     <title>DAW Proiektua</title>
     <link rel="stylesheet" href="css/CSS.css">
 </head>
-<body>
-    <header>
+<body id="top">
+
+    <header id="goiburua">
         <h1>Eskubaloi Txapelketa</h1>
         <div class="erabiltzaile-info">
             <?php
-            // Logeatuta badago, bere izena eta rola erakutsi
             if (isset($_SESSION['erabiltzailea'])) {
                 echo "<p>👤 " . $_SESSION['erabiltzailea'] . " | Rola: " . $_SESSION['rola'] . "</p>";
                 echo '<a href="logout.php">Saioa Itxi</a>';
@@ -32,7 +32,6 @@ if (session_status() === PHP_SESSION_NONE) {
                 <li><a href="index.php">Hasiera (Sailkapena)</a></li>
                 <li><a href="berriak.php">Berriak</a></li>
                 <?php
-                // ROL DESBERDINEN FUNTZIONALTASUNA: Admin-ak bakarrik ikusten du "Kudeatu"
                 if (isset($_SESSION['rola'])) {
                     echo '<li><a href="kontaktua.php"> Kontaktua </a></li>';
                 }

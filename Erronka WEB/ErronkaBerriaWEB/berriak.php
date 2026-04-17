@@ -58,12 +58,19 @@
             <div class="carousel-inner" id="inner4">
                 <div class="carousel-item"><img src="Irudiak/Taldeak/San Adrian.jpg" alt="Jugada 1"></div>
                 <div class="carousel-item"><img src="Irudiak/Taldeak/Kukullaga Etxebarri.jpg" alt="Jugada 2"></div>
+
                 <div class="carousel-item">
-                    <video style="width: 100%; height: 100%; object-fit: contain; background: #000;" controls>
-                        <source src="Irudiak/Videoa/videoa_3V6Dpz1g.mp4" type="video/mp4">
+                    <video 
+                        class="lazy-video"
+                        style="width: 100%; height: 100%; object-fit: contain; background: #000;" 
+                        controls
+                        preload="none"
+                        poster="Irudiak/Videoa/hq720.jpg">
+                        <source data-src="Irudiak/Videoa/videoa_3V6Dpz1g.mp4" type="video/mp4">
                         Zure nabigatzaileak ez du bideoa onartzen.
                     </video>
                 </div>
+
             </div>
             <button class="carousel-btn prev" onclick="moveSlide(-1, 'inner4')">&#10094;</button>
             <button class="carousel-btn next" onclick="moveSlide(1, 'inner4')">&#10095;</button>
@@ -72,25 +79,56 @@
 </main>
 
 <script>
-    /**
-     * LÓGICA DEL CARRUSEL
-     * Gestiona el movimiento de múltiples carruseles de forma independiente.
-     */
-    const carouselIndices = {};
+/**
+ * CARRUSEL LOGIC
+ */
+const carouselIndices = {};
 
-    function moveSlide(step, innerId) {
-        if (!(innerId in carouselIndices)) {
-            carouselIndices[innerId] = 0;
-        }
-        
-        const inner = document.getElementById(innerId);
-        const totalItems = inner.children.length;
-
-        carouselIndices[innerId] = (carouselIndices[innerId] + step + totalItems) % totalItems;
-
-        inner.style.transform = `translateX(-${carouselIndices[innerId] * 100}%)`;
+function moveSlide(step, innerId) {
+    if (!(innerId in carouselIndices)) {
+        carouselIndices[innerId] = 0;
     }
+
+    const inner = document.getElementById(innerId);
+    const totalItems = inner.children.length;
+
+    carouselIndices[innerId] = (carouselIndices[innerId] + step + totalItems) % totalItems;
+
+    inner.style.transform = `translateX(-${carouselIndices[innerId] * 100}%)`;
+}
+
+
+/**
+ * VIDEO LAZY LOAD
+ */
+document.addEventListener("DOMContentLoaded", function () {
+    const videos = document.querySelectorAll(".lazy-video");
+
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const video = entry.target;
+                const source = video.querySelector("source");
+
+                if (source && source.dataset.src) {
+                    source.src = source.dataset.src;
+                    video.load();
+                }
+
+                obs.unobserve(video);
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    videos.forEach(video => {
+        observer.observe(video);
+    });
+});
 </script>
+
+<?php include 'footer.php'; ?>
 
 </body>
 </html>

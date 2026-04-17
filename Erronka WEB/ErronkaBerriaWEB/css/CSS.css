@@ -228,3 +228,145 @@ button {
 .carousel-btn.next {
     right: 10px;
 }
+
+
+/* =========================================
+   KONTAKTUA / FORMULARIO DE CONTACTO
+========================================= */
+
+.contacto-section {
+    max-width: 700px;
+    /* Un poco más ancho para el texto */
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: #f8fafc;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 300px;
+    /* AQUÍ: Aumentado de 120px a 300px */
+    line-height: 1.5;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.form-btn {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-btn:hover {
+    background-color: #2980b9;
+}
+
+.mensaje-exito {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+                    FOOTER
+========================================= */
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-edukia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-erabiltzailea p {
+    margin: 0;
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+
+/* Botón oculto por defecto */
+
+.gorantz-botoia {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+
+/* Cuando aparece */
+
+.gorantz-botoia.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gorantz-botoia:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+.gorantz-botoia img {
+    width: 25px;
+    height: 25px;
+    display: block;
+    transition: 0.33s ease;
+}
+
+.gorantz-botoia:hover img {
+    transform: scaleX(-1);
+}
