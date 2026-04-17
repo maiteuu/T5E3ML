@@ -1,0 +1,372 @@
+/* =========================================
+   OINARRIZKO ESTILOAK / ESTILOS BASE
+========================================= */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   GOIBURUA ETA NABIGAZIOA / HEADER Y MENÚ
+========================================= */
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.erabiltzaile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34495e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.erabiltzaile-info a {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.erabiltzaile-info a:hover {
+    background-color: #c0392b;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+
+/* =========================================
+   EDUKI NAGUSIA / MAIN CONTENT
+========================================= */
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+
+/* =========================================
+   TAULAK ETA INPRIMAKIAK
+========================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #f9fbfd;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed;
+}
+
+input,
+select,
+button {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #cbd5e1;
+}
+
+button {
+    background-color: #2ecc71;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   CARRUSEL (FONDO BLANCO Y AJUSTE TOTAL)
+========================================= */
+
+.noticia-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 8px;
+    /* CAMBIADO A BLANCO */
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    /* Opcional: un borde suave para delimitarlo */
+    margin-top: 15px;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    /* Muestra la imagen completa */
+    display: block;
+}
+
+
+/* Botones con mejor contraste para fondo blanco */
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+
+/* =========================================
+   KONTAKTUA / FORMULARIO DE CONTACTO
+========================================= */
+
+.contacto-section {
+    max-width: 700px;
+    /* Un poco más ancho para el texto */
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: #f8fafc;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 300px;
+    /* AQUÍ: Aumentado de 120px a 300px */
+    line-height: 1.5;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.form-btn {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-btn:hover {
+    background-color: #2980b9;
+}
+
+.mensaje-exito {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+                    FOOTER
+========================================= */
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-edukia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-erabiltzailea p {
+    margin: 0;
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+
+/* Botón oculto por defecto */
+
+.gorantz-botoia {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+
+/* Cuando aparece */
+
+.gorantz-botoia.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gorantz-botoia:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+.gorantz-botoia img {
+    width: 25px;
+    height: 25px;
+    display: block;
+    transition: 0.33s ease;
+}
+
+.gorantz-botoia:hover img {
+    transform: scaleX(-1);
+}
