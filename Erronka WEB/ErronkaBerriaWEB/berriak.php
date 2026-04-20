@@ -99,7 +99,7 @@ function moveSlide(step, innerId) {
 
 
 /**
- * VIDEO LAZY LOAD
+ * VIDEO LAZY LOAD pedazo de ingles tengo
  */
 document.addEventListener("DOMContentLoaded", function () {
     const videos = document.querySelectorAll(".lazy-video");

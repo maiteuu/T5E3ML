@@ -31,13 +31,19 @@ if (session_status() === PHP_SESSION_NONE) {
             <ul>
                 <li><a href="index.php">Hasiera (Sailkapena)</a></li>
                 <li><a href="berriak.php">Berriak</a></li>
+                
                 <?php
                 if (isset($_SESSION['rola'])) {
                     echo '<li><a href="kontaktua.php"> Kontaktua </a></li>';
                 }
-                
-                if (isset($_SESSION['rola']) && $_SESSION['rola'] == 'admin') {
+
+                if (isset($_SESSION['rola']) && trim($_SESSION['rola']) == 'admin') {
+                    echo '<li><a href="ikusi_mezuak.php">📩 Mezuak Ikusi (Admin)</a></li>';
                     echo '<li><a href="kudeatu.php">⚙️ Datuak Kudeatu (Admin)</a></li>';
+                }
+
+                if (isset($_SESSION['rola']) && trim($_SESSION['rola']) == 'epailea') {
+                    echo '<li><a href="sartu_emaitzak.php">📝 Emaitzak Sartu (Epailea)</a></li>';
                 }
                 ?>
             </ul>

@@ -14,7 +14,7 @@ $erabiltzaileak_probak = [
     ],
     "epaile" => [
         "pasahitza" => "partida",
-        "rola" => "erabiltzaile_arrunta"
+        "rola" => "epailea"
     ]
 ];
 
